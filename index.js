@@ -25,7 +25,7 @@ function GenerateTable() {
     var customers = new Array();
     customers.push([" S.No ", " Name ", "  Type  ", "  Last_Modified_Date  ","Size", "File_Path"] , );
     for (var j = 0; j < cars.length; j++) {
-        customers.push([j + 1, copiedFiles[j].name.split('.')[0], copiedFiles[j].name.split('.')[1].toUpperCase(), copiedFiles[j].lastModifiedDate.toString().split('2022')[0],copiedFiles[j].size+" bytes", copiedFiles[j].webkitRelativePath
+        customers.push([j + 1, copiedFiles[j].name.split('.')[0], copiedFiles[j].name.split('.')[1].toUpperCase(), copiedFiles[j].lastModifiedDate.toString().split('GMT')[0],copiedFiles[j].size+" bytes", copiedFiles[j].webkitRelativePath
         ]);
     }
     //Create a HTML Table element.
